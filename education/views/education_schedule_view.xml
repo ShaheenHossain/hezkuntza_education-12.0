@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<eagle>
+    <record id="education_schedule_view_tree" model="ir.ui.view">
+        <field name="model">education.schedule</field>
+        <field name="arch" type="xml">
+            <tree decoration-muted="task_type_type != 'L'">
+                <field name="academic_year_id" />
+                <field name="center_id" />
+                <field name="teacher_id" />
+                <field name="classroom_id" />
+                <field name="task_type_type" invisible="True" />
+                <field name="group_ids" widget="many2many_tags"
+                       domain="[('academic_year_id', '=', academic_year_id),('center_id', '=', center_id)]"
+                       options="{'no_create': True}" />
+                <field name="student_count" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="education_schedule_view_tree2" model="ir.ui.view">
+        <field name="model">education.schedule</field>
+        <field name="arch" type="xml">
+            <tree decoration-muted="task_type_type != 'L'">
+                <field name="academic_year_id" invisible="True" />
+                <field name="center_id" invisible="True" />
+                <field name="teacher_id" />
+                <field name="classroom_id" />
+                <field name="task_type_id" />
+                <field name="task_type_type" invisible="True" />
+                <field name="subject_id" />
+                <field name="subject_type" />
+                <field name="language_id" />
+                <field name="group_ids" widget="many2many_tags"
+                       domain="[('academic_year_id', '=', academic_year_id),('center_id', '=', center_id)]"
+                       options="{'no_create': True}" />
+                <field name="student_count" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="education_schedule_view_form" model="ir.ui.view">
+        <field name="model">education.schedule</field>
+        <field name="arch" type="xml">
+            <form>
+                <header />
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="button_open_students" type="object"
+                                class="oe_stat_button"
+                                icon="fa-users">
+                            <field name="student_count" string="Students"
+                                   widget="statinfo"/>
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="academic_year_id" />
+                            <field name="center_id" />
+                            <field name="teacher_id" />
+                            <field name="classroom_id" />
+                            <field name="task_type_id" />
+                            <field name="task_type_type" invisible="True" />
+                        </group>
+                        <group>
+                            <field name="resource_calendar_id"
+                                   invisible="True" />
+                            <field name="timetable_ids">
+                                <tree editable="bottom">
+                                    <field name="dayofweek" />
+                                    <field name="hour_from" widget="float_time" />
+                                    <field name="hour_to" widget="float_time" />
+                                </tree>
+                            </field>
+                        </group>
+                    </group>
+                    <group>
+                        <group name="academic" string="Academic Task"
+                               attrs="{'invisible': [('task_type_type', '!=', 'L')]}">
+                            <field name="subject_id" />
+                            <field name="subject_type" />
+                            <field name="language_id" />
+                        </group>
+                        <group name="nonacademic" string="Non-Academic Task"
+                               attrs="{'invisible': [('task_type_type', '!=', 'N')]}">
+                            <field name="activity_type_id" />
+                            <field name="level_id" />
+                            <field name="plan_id"
+                                   options="{'no_create_edit': True}" />
+                        </group>
+                    </group>
+                    <group>
+                        <field name="group_ids" widget="many2many_tags"
+                               domain="[('academic_year_id','=',academic_year_id),('center_id','=',center_id)]"
+                               options="{'no_create': True}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_schedule_view_search" model="ir.ui.view">
+        <field name="model">education.schedule</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="academic_year_id" />
+                <field name="center_id" />
+                <field name="teacher_id" />
+                <field name="classroom_id" />
+                <field name="group_ids" />
+                <group expand="0" string="Group By" name="group_by">
+                    <filter name="group_academic_year" string="Academic Year"
+                            context="{'group_by': 'academic_year_id'}" />
+                    <filter name="group_center" string="Education Center"
+                            context="{'group_by': 'center_id'}" />
+                    <filter name="group_classroom" string="Classroom"
+                            context="{'group_by': 'classroom_id'}" />
+                    <filter name="group_teacher" string="Teacher"
+                            context="{'group_by': 'teacher_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_education_schedule">
+        <field name="name">Schedule</field>
+        <field name="res_model">education.schedule</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form,tree</field>
+        <field name="view_id" ref="education_schedule_view_tree" />
+    </record>
+
+    <record model="ir.actions.act_window" id="action_education_schedule_from_group">
+        <field name="name">Schedule</field>
+        <field name="res_model">education.schedule</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form,tree</field>
+        <field name="view_id" ref="education_schedule_view_tree2" />
+    </record>
+</eagle>

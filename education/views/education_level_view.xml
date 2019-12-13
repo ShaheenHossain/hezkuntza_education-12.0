@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<eagle>
+    <record id="education_level_view_tree" model="ir.ui.view">
+        <field name="model">education.level</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="education_code" />
+                <field name="plan_id" />
+                <field name="description" />
+                <field name="active" invisible="True" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="education_level_view_search" model="ir.ui.view">
+        <field name="model">education.level</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="education_code" />
+                <field name="description" />
+                <field name="short_description" />
+                <field name="plan_id" />
+                <filter string="Archived" name="inactive"
+                        domain="[('active','=',False)]" />
+            </search>
+        </field>
+    </record>
+
+    <record id="education_level_view_form" model="ir.ui.view">
+        <field name="model">education.level</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive"
+                                groups="education.education_responsible">
+                            <field name="active" widget="boolean_button" options="{'terminology': 'archive'}"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="education_code" />
+                        <h1>
+                            <field name="education_code" />
+                        </h1>
+                    </div>
+                    <group name="description" string="Description">
+                        <field name="description" nolabel="1" colspan="4"/>
+                    </group>
+                    <group name="short_description"
+                           string="Short Description">
+                        <field name="short_description" />
+                    </group>
+                    <group>
+                        <field name="plan_id"
+                               options="{'no_create_edit': True, 'no_create': True, 'no_open': True}" />
+                    </group>
+                    <group name="task_type" string="Task Types"
+                           attrs="{'invisible': [('task_type_ids', '=', [])]}">
+                        <field name="task_type_ids" nolabel="1"/>
+                    </group>
+                    <group name="workday_type_per_year"
+                           string="Workday Type per Academic Year"
+                           attrs="{'invisible': [('academic_year_workday_type_id', '=', [])]}">
+                        <field name="academic_year_workday_type_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_education_level">
+        <field name="name">Level</field>
+        <field name="res_model">education.level</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form,tree</field>
+        <field name="view_id" ref="education_level_view_tree" />
+    </record>
+
+</eagle>

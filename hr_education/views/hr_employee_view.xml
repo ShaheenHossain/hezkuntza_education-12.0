@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<eagle>
+    <record id="hr_employee_view_form" model="ir.ui.view">
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="arch" type="xml">
+            <field name="identification_id" position="after">
+                <field name="edu_idtype_id"
+                       options="{'no_create': True, 'no_open': True}"/>
+            </field>
+            <group name="active_group" position="after">
+                <group name="education_info" string="Education Info">
+                    <separator string="Levels" />
+                    <field name="edu_level_ids" nolabel="1"
+                           options="{'no_create': True, 'no_open': True}" colspan="4">
+                        <tree>
+                            <field name="education_code" />
+                            <field name="description" />
+                            <field name="plan_id" />
+                        </tree>
+                    </field>
+                    <separator string="Languages" />
+                    <field name="edu_language_ids" nolabel="1"
+                           options="{'no_create': True, 'no_open': True}" colspan="4">
+                        <tree>
+                            <field name="education_code" />
+                            <field name="description" />
+                        </tree>
+                    </field>
+                    <separator string="Subjects" />
+                    <field name="edu_subject_ids" nolabel="1"
+                           options="{'no_create': True, 'no_open': True}" colspan="4">
+                        <tree>
+                            <field name="education_code" />
+                            <field name="description" />
+                            <field name="type_id" />
+                            <field name="level_ids" widget="many2many_tags"
+                                   readonly="True" />
+                            <field name="field_ids" widget="many2many_tags"
+                                   readonly="True" />
+                            <field name="course_ids" widget="many2many_tags"
+                                   readonly="True" />
+                        </tree>
+                    </field>
+                </group>
+            </group>
+        </field>
+    </record>
+</eagle>

@@ -1,0 +1,1471 @@
+# Translation of Eagle Server.
+# This file contains the translation of the following modules:
+#	* education
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Eagle Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-09 09:43+0000\n"
+"PO-Revision-Date: 2019-12-09 09:43+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_res_partner__education_group_count
+#: model:ir.model.fields,field_description:education.field_res_users__education_group_count
+msgid "# Education Groups"
+msgstr "Nº grupos educativos"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_schedule_view_form
+msgid "Academic Task"
+msgstr "Tarea académica"
+
+#. module: education
+#: model:ir.model,name:education.model_education_academic_year
+#: model:ir.model.fields,field_description:education.field_education_academic_year__name
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__academic_year_id
+#: model:ir.model.fields,field_description:education.field_education_group__academic_year_id
+#: model:ir.model.fields,field_description:education.field_education_group_report__academic_year_id
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__academic_year_id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__academic_year_id
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__academic_year_id
+#: model:ir.model.fields,field_description:education.field_education_schedule__academic_year_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_schedule_view_search
+msgid "Academic Year"
+msgstr "Año académico"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+msgid "Academic year"
+msgstr "Año académico"
+
+#. module: education
+#: sql_constraint:education.academic_year:0
+msgid "Academic year must be unique!"
+msgstr "El año académico debe ser único"
+
+#. module: education
+#: code:addons/education/models/education_academic_year.py:27
+#, python-format
+msgid "Academic year must be {} digits long!"
+msgstr "¡El año académico debe tener {} caracteres!"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__active
+#: model:ir.model.fields,field_description:education.field_education_activity_type__active
+#: model:ir.model.fields,field_description:education.field_education_classroom__active
+#: model:ir.model.fields,field_description:education.field_education_contract_type__active
+#: model:ir.model.fields,field_description:education.field_education_course__active
+#: model:ir.model.fields,field_description:education.field_education_data__active
+#: model:ir.model.fields,field_description:education.field_education_designation_level__active
+#: model:ir.model.fields,field_description:education.field_education_field__active
+#: model:ir.model.fields,field_description:education.field_education_group__active
+#: model:ir.model.fields,field_description:education.field_education_group_type__active
+#: model:ir.model.fields,field_description:education.field_education_idtype__active
+#: model:ir.model.fields,field_description:education.field_education_language__active
+#: model:ir.model.fields,field_description:education.field_education_level__active
+#: model:ir.model.fields,field_description:education.field_education_model__active
+#: model:ir.model.fields,field_description:education.field_education_plan__active
+#: model:ir.model.fields,field_description:education.field_education_position__active
+#: model:ir.model.fields,field_description:education.field_education_shift__active
+#: model:ir.model.fields,field_description:education.field_education_subject__active
+#: model:ir.model.fields,field_description:education.field_education_subject_type__active
+#: model:ir.model.fields,field_description:education.field_education_task_type__active
+#: model:ir.model.fields,field_description:education.field_education_work_reason__active
+#: model:ir.model.fields,field_description:education.field_education_workday_type__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__group_alias
+msgid "Alias"
+msgstr ""
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_academic_year_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_classroom_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_course_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_level_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_plan_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_subject_view_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule__attendance_id
+msgid "Attendance"
+msgstr "Asistencia"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group__calendar_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+msgid "Calendar"
+msgstr "Calendario"
+
+#. module: education
+#: selection:education.group_type,type:0
+msgid "Class"
+msgstr "Impartición"
+
+#. module: education
+#: model:ir.model,name:education.model_education_schedule
+msgid "Class Schedule"
+msgstr "Horario de clases"
+
+#. module: education
+#: model:ir.model,name:education.model_education_schedule_group
+msgid "Class Schedule Group"
+msgstr "Grupo de hora de clase"
+
+#. module: education
+#: model:ir.model,name:education.model_education_schedule_timetable
+msgid "Class Schedule Timetable"
+msgstr "Tabla de horarios"
+
+#. module: education
+#: model:ir.model,name:education.model_education_shift
+msgid "Class Shift"
+msgstr "Turno"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_classroom
+#: model:ir.model,name:education.model_education_classroom
+#: model:ir.model.fields,field_description:education.field_education_group__classroom_id
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__classroom_id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__classroom_id
+#: model:ir.model.fields,field_description:education.field_education_schedule__classroom_id
+#: model:ir.ui.menu,name:education.education_classroom_menuitem
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_schedule_view_search
+msgid "Classroom"
+msgstr "Aula"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group__comments
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_form
+msgid "Comments"
+msgstr "Comentarios"
+
+#. module: education
+#: selection:education.subject.type,type:0
+msgid "Compulsory"
+msgstr "Obligatoria"
+
+#. module: education
+#: model:ir.ui.menu,name:education.education_configuration_menuitem
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: education
+#: model:ir.model,name:education.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_contract_type
+#: model:ir.ui.menu,name:education.faculty_contract_type_menuitem
+msgid "Contract Type"
+msgstr "Tipos de contratos privados"
+
+#. module: education
+#: model:ir.model,name:education.model_education_course
+#: model:ir.model.fields,field_description:education.field_education_group__course_id
+#: model:ir.model.fields,field_description:education.field_education_group_report__course_id
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__course_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+msgid "Course"
+msgstr "Curso"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_course
+#: model:ir.model.fields,field_description:education.field_education_plan__course_ids
+#: model:ir.model.fields,field_description:education.field_education_subject__course_ids
+#: model:ir.ui.menu,name:education.schedule_course_menuitem
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_subject__level_course_ids
+msgid "Courses by Level"
+msgstr "Cursos por nivel"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_subject_view_form
+msgid "Courses by Levels"
+msgstr "Cursos por niveles"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__create_uid
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__create_uid
+#: model:ir.model.fields,field_description:education.field_education_activity_type__create_uid
+#: model:ir.model.fields,field_description:education.field_education_classroom__create_uid
+#: model:ir.model.fields,field_description:education.field_education_contract_type__create_uid
+#: model:ir.model.fields,field_description:education.field_education_course__create_uid
+#: model:ir.model.fields,field_description:education.field_education_designation_level__create_uid
+#: model:ir.model.fields,field_description:education.field_education_field__create_uid
+#: model:ir.model.fields,field_description:education.field_education_group__create_uid
+#: model:ir.model.fields,field_description:education.field_education_group_session__create_uid
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__create_uid
+#: model:ir.model.fields,field_description:education.field_education_group_type__create_uid
+#: model:ir.model.fields,field_description:education.field_education_idtype__create_uid
+#: model:ir.model.fields,field_description:education.field_education_language__create_uid
+#: model:ir.model.fields,field_description:education.field_education_level__create_uid
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__create_uid
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__create_uid
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__create_uid
+#: model:ir.model.fields,field_description:education.field_education_model__create_uid
+#: model:ir.model.fields,field_description:education.field_education_plan__create_uid
+#: model:ir.model.fields,field_description:education.field_education_position__create_uid
+#: model:ir.model.fields,field_description:education.field_education_schedule__create_uid
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__create_uid
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__create_uid
+#: model:ir.model.fields,field_description:education.field_education_section__create_uid
+#: model:ir.model.fields,field_description:education.field_education_shift__create_uid
+#: model:ir.model.fields,field_description:education.field_education_subject__create_uid
+#: model:ir.model.fields,field_description:education.field_education_subject_type__create_uid
+#: model:ir.model.fields,field_description:education.field_education_task_type__create_uid
+#: model:ir.model.fields,field_description:education.field_education_work_reason__create_uid
+#: model:ir.model.fields,field_description:education.field_education_workday_type__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__create_date
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__create_date
+#: model:ir.model.fields,field_description:education.field_education_activity_type__create_date
+#: model:ir.model.fields,field_description:education.field_education_classroom__create_date
+#: model:ir.model.fields,field_description:education.field_education_contract_type__create_date
+#: model:ir.model.fields,field_description:education.field_education_course__create_date
+#: model:ir.model.fields,field_description:education.field_education_designation_level__create_date
+#: model:ir.model.fields,field_description:education.field_education_field__create_date
+#: model:ir.model.fields,field_description:education.field_education_group__create_date
+#: model:ir.model.fields,field_description:education.field_education_group_session__create_date
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__create_date
+#: model:ir.model.fields,field_description:education.field_education_group_type__create_date
+#: model:ir.model.fields,field_description:education.field_education_idtype__create_date
+#: model:ir.model.fields,field_description:education.field_education_language__create_date
+#: model:ir.model.fields,field_description:education.field_education_level__create_date
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__create_date
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__create_date
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__create_date
+#: model:ir.model.fields,field_description:education.field_education_model__create_date
+#: model:ir.model.fields,field_description:education.field_education_plan__create_date
+#: model:ir.model.fields,field_description:education.field_education_position__create_date
+#: model:ir.model.fields,field_description:education.field_education_schedule__create_date
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__create_date
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__create_date
+#: model:ir.model.fields,field_description:education.field_education_section__create_date
+#: model:ir.model.fields,field_description:education.field_education_shift__create_date
+#: model:ir.model.fields,field_description:education.field_education_subject__create_date
+#: model:ir.model.fields,field_description:education.field_education_subject_type__create_date
+#: model:ir.model.fields,field_description:education.field_education_task_type__create_date
+#: model:ir.model.fields,field_description:education.field_education_work_reason__create_date
+#: model:ir.model.fields,field_description:education.field_education_workday_type__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+msgid "Current Academic Year"
+msgstr "Año académico actual"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+msgid "Current Official Groups"
+msgstr "Grupos oficiales actuales"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__date_end
+msgid "Date End"
+msgstr "Fecha fin"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__date_start
+msgid "Date Start"
+msgstr "Fecha de inicio"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_academic_year_view_form
+msgid "Dates"
+msgstr "Fechas"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_session__dayofweek
+#: model:ir.model.fields,field_description:education.field_education_schedule__dayofweek
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__dayofweek
+msgid "Day of Week"
+msgstr "Día de la semana"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__dedicated_working_day
+msgid "Dedicated Working Day"
+msgstr "Jornada dedicada"
+
+#. module: education
+#: model:ir.model.fields,help:education.field_education_schedule__resource_calendar_id
+msgid "Define the schedule of resource"
+msgstr "Define la planificación del recurso."
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_activity_type__description
+#: model:ir.model.fields,field_description:education.field_education_classroom__description
+#: model:ir.model.fields,field_description:education.field_education_contract_type__description
+#: model:ir.model.fields,field_description:education.field_education_course__description
+#: model:ir.model.fields,field_description:education.field_education_data__description
+#: model:ir.model.fields,field_description:education.field_education_designation_level__description
+#: model:ir.model.fields,field_description:education.field_education_field__description
+#: model:ir.model.fields,field_description:education.field_education_group__description
+#: model:ir.model.fields,field_description:education.field_education_group_type__description
+#: model:ir.model.fields,field_description:education.field_education_idtype__description
+#: model:ir.model.fields,field_description:education.field_education_language__description
+#: model:ir.model.fields,field_description:education.field_education_level__description
+#: model:ir.model.fields,field_description:education.field_education_model__description
+#: model:ir.model.fields,field_description:education.field_education_plan__description
+#: model:ir.model.fields,field_description:education.field_education_position__description
+#: model:ir.model.fields,field_description:education.field_education_shift__description
+#: model:ir.model.fields,field_description:education.field_education_subject__description
+#: model:ir.model.fields,field_description:education.field_education_subject_type__description
+#: model:ir.model.fields,field_description:education.field_education_task_type__description
+#: model:ir.model.fields,field_description:education.field_education_work_reason__description
+#: model:ir.model.fields,field_description:education.field_education_workday_type__description
+#: model_terms:ir.ui.view,arch_db:education.education_activity_type_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_classroom_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_contract_type_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_course_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_designation_level_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_field_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_group_type_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_idtype_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_language_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_level_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_model_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_plan_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_position_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_shift_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_subject_type_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_subject_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_task_type_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_work_reason_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_workday_type_view_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_designation_level
+#: model:ir.ui.menu,name:education.faculty_designation_level_menuitem
+msgid "Designation Levels"
+msgstr "Niveles de nombramiento"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__display_name
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__display_name
+#: model:ir.model.fields,field_description:education.field_education_activity_type__display_name
+#: model:ir.model.fields,field_description:education.field_education_classroom__display_name
+#: model:ir.model.fields,field_description:education.field_education_contract_type__display_name
+#: model:ir.model.fields,field_description:education.field_education_course__display_name
+#: model:ir.model.fields,field_description:education.field_education_data__display_name
+#: model:ir.model.fields,field_description:education.field_education_designation_level__display_name
+#: model:ir.model.fields,field_description:education.field_education_field__display_name
+#: model:ir.model.fields,field_description:education.field_education_group__display_name
+#: model:ir.model.fields,field_description:education.field_education_group_report__display_name
+#: model:ir.model.fields,field_description:education.field_education_group_session__display_name
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__display_name
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__display_name
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__display_name
+#: model:ir.model.fields,field_description:education.field_education_group_type__display_name
+#: model:ir.model.fields,field_description:education.field_education_idtype__display_name
+#: model:ir.model.fields,field_description:education.field_education_language__display_name
+#: model:ir.model.fields,field_description:education.field_education_level__display_name
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__display_name
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__display_name
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__display_name
+#: model:ir.model.fields,field_description:education.field_education_model__display_name
+#: model:ir.model.fields,field_description:education.field_education_plan__display_name
+#: model:ir.model.fields,field_description:education.field_education_position__display_name
+#: model:ir.model.fields,field_description:education.field_education_schedule__display_name
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__display_name
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__display_name
+#: model:ir.model.fields,field_description:education.field_education_section__display_name
+#: model:ir.model.fields,field_description:education.field_education_shift__display_name
+#: model:ir.model.fields,field_description:education.field_education_subject__display_name
+#: model:ir.model.fields,field_description:education.field_education_subject_type__display_name
+#: model:ir.model.fields,field_description:education.field_education_task_type__display_name
+#: model:ir.model.fields,field_description:education.field_education_work_reason__display_name
+#: model:ir.model.fields,field_description:education.field_education_workday_type__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: education
+#: model:ir.module.category,name:education.education_module_category
+#: model:ir.ui.menu,name:education.education_menuitem
+msgid "Education"
+msgstr "Educación"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_classroom__center_id
+#: model:ir.model.fields,field_description:education.field_education_group__center_id
+#: model:ir.model.fields,field_description:education.field_education_group_report__center_id
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__center_id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__center_id
+#: model:ir.model.fields,field_description:education.field_education_schedule__center_id
+#: model:ir.ui.menu,name:education.education_center_menuitem
+#: model_terms:ir.ui.view,arch_db:education.education_classroom_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_schedule_view_search
+msgid "Education Center"
+msgstr "Centro educativo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_activity_type__education_code
+#: model:ir.model.fields,field_description:education.field_education_classroom__education_code
+#: model:ir.model.fields,field_description:education.field_education_contract_type__education_code
+#: model:ir.model.fields,field_description:education.field_education_course__education_code
+#: model:ir.model.fields,field_description:education.field_education_data__education_code
+#: model:ir.model.fields,field_description:education.field_education_designation_level__education_code
+#: model:ir.model.fields,field_description:education.field_education_field__education_code
+#: model:ir.model.fields,field_description:education.field_education_group__education_code
+#: model:ir.model.fields,field_description:education.field_education_group_type__education_code
+#: model:ir.model.fields,field_description:education.field_education_idtype__education_code
+#: model:ir.model.fields,field_description:education.field_education_language__education_code
+#: model:ir.model.fields,field_description:education.field_education_level__education_code
+#: model:ir.model.fields,field_description:education.field_education_model__education_code
+#: model:ir.model.fields,field_description:education.field_education_plan__education_code
+#: model:ir.model.fields,field_description:education.field_education_position__education_code
+#: model:ir.model.fields,field_description:education.field_education_shift__education_code
+#: model:ir.model.fields,field_description:education.field_education_subject__education_code
+#: model:ir.model.fields,field_description:education.field_education_subject_type__education_code
+#: model:ir.model.fields,field_description:education.field_education_task_type__education_code
+#: model:ir.model.fields,field_description:education.field_education_work_reason__education_code
+#: model:ir.model.fields,field_description:education.field_education_workday_type__education_code
+#: model:ir.model.fields,field_description:education.field_res_lang__education_code
+#: model:ir.model.fields,field_description:education.field_res_partner__education_code
+#: model:ir.model.fields,field_description:education.field_res_users__education_code
+msgid "Education Code"
+msgstr "Código educación"
+
+#. module: education
+#: model:ir.model,name:education.model_education_contract_type
+msgid "Education Contract Type"
+msgstr "Tipos de contratos privados"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__course_id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__course_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+msgid "Education Course"
+msgstr "Curso"
+
+#. module: education
+#: model:ir.model,name:education.model_education_data
+msgid "Education Data Base Model"
+msgstr "Modelo base para datos de Hezkuntza"
+
+#. module: education
+#: model:ir.model,name:education.model_education_designation_level
+msgid "Education Designation Level"
+msgstr "Nivel de nombramiento de Hezkuntza"
+
+#. module: education
+#: model:ir.model,name:education.model_education_field
+msgid "Education Field"
+msgstr "Especialidad"
+
+#. module: education
+#: model:ir.model,name:education.model_education_group
+#: model:ir.model.fields,field_description:education.field_education_group_report__group_id
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__group_id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__group_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+msgid "Education Group"
+msgstr "Grupo educativo"
+
+#. module: education
+#: model:ir.model,name:education.model_education_group_session
+msgid "Education Group Sessions"
+msgstr "Sesión de grupo educativo"
+
+#. module: education
+#: model:ir.model,name:education.model_education_group_teacher
+msgid "Education Group Teachers"
+msgstr "Tutores de grupo educativo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule__group_ids
+#: model_terms:ir.ui.view,arch_db:education.res_partner_education_view_form
+msgid "Education Groups"
+msgstr "Grupos educativos"
+
+#. module: education
+#: model:ir.model,name:education.model_education_idtype
+msgid "Education ID Type"
+msgstr "Tipos de documento"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_res_lang__edu_lang_id
+msgid "Education Language"
+msgstr "Idioma de educación"
+
+#. module: education
+#: model:ir.model,name:education.model_education_level
+msgid "Education Level"
+msgstr "Nivel"
+
+#. module: education
+#: model:ir.model,name:education.model_education_level_workday_type
+msgid "Education Level and Workday Type Relation"
+msgstr "Relación entre nivel y tipo de jornada"
+
+#. module: education
+#: model:ir.model,name:education.model_education_level_course_subject
+msgid "Education Level, Course and Subject Relation"
+msgstr "Relación entre nivel, curso y asignatura"
+
+#. module: education
+#: model:ir.model,name:education.model_education_level_field_subject
+msgid "Education Level, Field and Subject Relation"
+msgstr "Relación entre nivel, especialidad y asignatura"
+
+#. module: education
+#: model:ir.model,name:education.model_education_activity_type
+msgid "Education Other Activity Type"
+msgstr "Tipos de otras actividades"
+
+#. module: education
+#: model:ir.model,name:education.model_education_plan
+#: model:ir.model.fields,field_description:education.field_education_schedule__plan_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+msgid "Education Plan"
+msgstr "Plan educativo"
+
+#. module: education
+#: model:ir.model,name:education.model_education_position
+msgid "Education Position"
+msgstr "Cargo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group__schedule_ids
+msgid "Education Schedule"
+msgstr "Planificación"
+
+#. module: education
+#: model:ir.model,name:education.model_education_section
+msgid "Education Section"
+msgstr "Sección"
+
+#. module: education
+#: model:ir.model,name:education.model_education_subject
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__subject_id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__subject_id
+#: model:ir.model.fields,field_description:education.field_education_schedule__subject_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+msgid "Education Subject"
+msgstr "Asignatura"
+
+#. module: education
+#: model:ir.model,name:education.model_education_subject_type
+msgid "Education Subject Type"
+msgstr "Tipo de asignatura"
+
+#. module: education
+#: model:ir.model,name:education.model_education_task_type
+msgid "Education Task Type"
+msgstr "Tipo de tarea"
+
+#. module: education
+#: model:ir.model,name:education.model_education_workday_type
+msgid "Education Type of Workday"
+msgstr "Tipo de jornada"
+
+#. module: education
+#: model:ir.model,name:education.model_education_work_reason
+msgid "Education Work Reason"
+msgstr "Causas de alta privados"
+
+#. module: education
+#: sql_constraint:education.group:0
+msgid "Education code must be unique per center and academic year!"
+msgstr "¡El código de educación debe ser único por centro y año académico!"
+
+#. module: education
+#: sql_constraint:education.course:0
+msgid "Education code must be unique per level and field!"
+msgstr "¡El código de educación debe ser único por nivel y especialidad!"
+
+#. module: education
+#: sql_constraint:education.level:0
+msgid "Education code must be unique per plan!"
+msgstr "¡El código de educación debe ser único por plan!"
+
+#. module: education
+#: sql_constraint:education.position:0
+msgid "Education code must be unique per type!"
+msgstr "¡El código de educación debe ser único por tipo!"
+
+#. module: education
+#: sql_constraint:education.activity_type:0
+#: sql_constraint:education.classroom:0
+#: sql_constraint:education.contract_type:0
+#: sql_constraint:education.designation_level:0
+#: sql_constraint:education.field:0
+#: sql_constraint:education.group_type:0
+#: sql_constraint:education.idtype:0
+#: sql_constraint:education.language:0
+#: sql_constraint:education.model:0
+#: sql_constraint:education.plan:0
+#: sql_constraint:education.subject:0
+#: sql_constraint:education.subject.type:0
+#: sql_constraint:education.task_type:0
+#: sql_constraint:education.work_reason:0
+#: sql_constraint:education.workday_type:0
+#: sql_constraint:res.partner:0
+msgid "Education code must be unique!"
+msgstr "¡El código de educación debe ser único!"
+
+#. module: education
+#: sql_constraint:res.lang:0
+msgid "Education lang must be unique!"
+msgstr "¡El idioma de educación debe ser único!"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_academic_year
+#: model:ir.ui.menu,name:education.schedule_academic_year_menuitem
+msgid "Educational Academic Year"
+msgstr "Año academico"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_academic_year_evaluation
+#: model:ir.ui.menu,name:education.schedule_academic_year_evaluation_menuitem
+msgid "Educational Academic Year Evaluation"
+msgstr "Evaluación"
+
+#. module: education
+#: model:ir.model,name:education.model_education_group_type
+#: model:ir.model.fields,field_description:education.field_education_group__group_type_id
+#: model:ir.model.fields,field_description:education.field_education_group_report__group_type_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+msgid "Educational Group Type"
+msgstr "Tipo de grupo"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_group_type
+#: model:ir.ui.menu,name:education.group_type_menuitem
+msgid "Educational Group Types"
+msgstr "Tipos de grupo"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_group
+#: model:ir.ui.menu,name:education.group_menuitem
+msgid "Educational Groups"
+msgstr "Grupos educativos"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_level_workday_type
+msgid "Educational Level and Workday Type Relation"
+msgstr "Relación entre niveles y tipos de jornada"
+
+#. module: education
+#: model:ir.model,name:education.model_education_model
+#: model:ir.model.fields,field_description:education.field_education_group__model_id
+msgid "Educational Model"
+msgstr "Modelo educativo"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_model
+#: model:ir.ui.menu,name:education.group_model_menuitem
+msgid "Educational Models"
+msgstr "Modelos educativos"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_plan
+#: model:ir.ui.menu,name:education.schedule_plan_menuitem
+msgid "Educational Plan"
+msgstr "Plan educativo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: education
+#: model:ir.ui.menu,name:education.faculty_employee_menuitem
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__date_end
+msgid "End Date"
+msgstr "Fecha finalización"
+
+#. module: education
+#: code:addons/education/models/education_academic_year.py:35
+#: code:addons/education/models/education_academic_year_evaluation.py:25
+#: code:addons/education/models/education_academic_year_evaluation.py:26
+#, python-format
+msgid "End date must be after start date."
+msgstr "La fecha final debe de ser posterior a la fecha inicial."
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__name
+msgid "Evaluation Name"
+msgstr "Nombre de la evaluación"
+
+#. module: education
+#: code:addons/education/models/education_academic_year_evaluation.py:36
+#: code:addons/education/models/education_academic_year_evaluation.py:37
+#, python-format
+msgid "Evaluation dates must be between academic year dates."
+msgstr "Las fechas de la evaluación deben estar comprendidas entre las fechas del año académico."
+
+#. module: education
+#: sql_constraint:education.academic_year.evaluation:0
+msgid "Evaluation name must be unique!"
+msgstr "¡El nombre de la evaluación debe ser único!"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__evaluation_ids
+#: model_terms:ir.ui.view,arch_db:education.education_academic_year_view_form
+msgid "Evaluations"
+msgstr "Evaluaciones"
+
+#. module: education
+#: model:ir.model,name:education.model_education_academic_year_evaluation
+msgid "Evaluations for an academic year"
+msgstr "Evaluaciones para un año académico"
+
+#. module: education
+#: model:ir.ui.menu,name:education.configuration_faculty_menuitem
+#: model:ir.ui.menu,name:education.faculty_menuitem
+msgid "Faculty"
+msgstr "Profesorado"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_subject__level_field_ids
+msgid "Fields by Level"
+msgstr "Especialidades por nivel"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_subject_view_form
+msgid "Fields by Levels"
+msgstr "Especialidades por niveles"
+
+#. module: education
+#: selection:education.subject.type,type:0
+msgid "Free Choice"
+msgstr "Libre elección"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_session__group_id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__group_id
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__group_id
+msgid "Group"
+msgstr "Grupo"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_schedule_view_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_classroom_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_position_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_subject_view_search
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_group_report
+#: model:ir.ui.menu,name:education.education_group_report_menuitem
+msgid "Group List"
+msgstr "Listado de grupos"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__group_type_id
+msgid "Group Type"
+msgstr "Tipo de grupo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule__schedule_group_ids
+#: model:ir.ui.menu,name:education.configuration_groups_menuitem
+#: model:ir.ui.menu,name:education.groups_menuitem
+msgid "Groups"
+msgstr "Grupos"
+
+#. module: education
+#: model:ir.model,name:education.model_education_group_report
+msgid "Groups Report"
+msgstr "Informe de grupos"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__id
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__id
+#: model:ir.model.fields,field_description:education.field_education_activity_type__id
+#: model:ir.model.fields,field_description:education.field_education_classroom__id
+#: model:ir.model.fields,field_description:education.field_education_contract_type__id
+#: model:ir.model.fields,field_description:education.field_education_course__id
+#: model:ir.model.fields,field_description:education.field_education_data__id
+#: model:ir.model.fields,field_description:education.field_education_designation_level__id
+#: model:ir.model.fields,field_description:education.field_education_field__id
+#: model:ir.model.fields,field_description:education.field_education_group__id
+#: model:ir.model.fields,field_description:education.field_education_group_report__id
+#: model:ir.model.fields,field_description:education.field_education_group_session__id
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__id
+#: model:ir.model.fields,field_description:education.field_education_group_type__id
+#: model:ir.model.fields,field_description:education.field_education_idtype__id
+#: model:ir.model.fields,field_description:education.field_education_language__id
+#: model:ir.model.fields,field_description:education.field_education_level__id
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__id
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__id
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__id
+#: model:ir.model.fields,field_description:education.field_education_model__id
+#: model:ir.model.fields,field_description:education.field_education_plan__id
+#: model:ir.model.fields,field_description:education.field_education_position__id
+#: model:ir.model.fields,field_description:education.field_education_schedule__id
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__id
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__id
+#: model:ir.model.fields,field_description:education.field_education_section__id
+#: model:ir.model.fields,field_description:education.field_education_shift__id
+#: model:ir.model.fields,field_description:education.field_education_subject__id
+#: model:ir.model.fields,field_description:education.field_education_subject_type__id
+#: model:ir.model.fields,field_description:education.field_education_task_type__id
+#: model:ir.model.fields,field_description:education.field_education_work_reason__id
+#: model:ir.model.fields,field_description:education.field_education_workday_type__id
+msgid "ID"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_res_partner__edu_idtype_id
+#: model:ir.model.fields,field_description:education.field_res_users__edu_idtype_id
+msgid "ID Type"
+msgstr "Tipo de identificación"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_idtype
+#: model:ir.ui.menu,name:education.faculty_idtype_menuitem
+msgid "ID types"
+msgstr "Tipos de documento"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_language
+#: model:ir.model,name:education.model_education_language
+#: model:ir.model.fields,field_description:education.field_education_language__lang_id
+#: model:ir.model.fields,field_description:education.field_education_schedule__language_id
+#: model:ir.ui.menu,name:education.schedule_language_menuitem
+msgid "Language"
+msgstr "Idioma"
+
+#. module: education
+#: model:ir.model,name:education.model_res_lang
+msgid "Languages"
+msgstr "Idiomas"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year____last_update
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation____last_update
+#: model:ir.model.fields,field_description:education.field_education_activity_type____last_update
+#: model:ir.model.fields,field_description:education.field_education_classroom____last_update
+#: model:ir.model.fields,field_description:education.field_education_contract_type____last_update
+#: model:ir.model.fields,field_description:education.field_education_course____last_update
+#: model:ir.model.fields,field_description:education.field_education_data____last_update
+#: model:ir.model.fields,field_description:education.field_education_designation_level____last_update
+#: model:ir.model.fields,field_description:education.field_education_field____last_update
+#: model:ir.model.fields,field_description:education.field_education_group____last_update
+#: model:ir.model.fields,field_description:education.field_education_group_report____last_update
+#: model:ir.model.fields,field_description:education.field_education_group_session____last_update
+#: model:ir.model.fields,field_description:education.field_education_group_student_report____last_update
+#: model:ir.model.fields,field_description:education.field_education_group_teacher____last_update
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report____last_update
+#: model:ir.model.fields,field_description:education.field_education_group_type____last_update
+#: model:ir.model.fields,field_description:education.field_education_idtype____last_update
+#: model:ir.model.fields,field_description:education.field_education_language____last_update
+#: model:ir.model.fields,field_description:education.field_education_level____last_update
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject____last_update
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject____last_update
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type____last_update
+#: model:ir.model.fields,field_description:education.field_education_model____last_update
+#: model:ir.model.fields,field_description:education.field_education_plan____last_update
+#: model:ir.model.fields,field_description:education.field_education_position____last_update
+#: model:ir.model.fields,field_description:education.field_education_schedule____last_update
+#: model:ir.model.fields,field_description:education.field_education_schedule_group____last_update
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable____last_update
+#: model:ir.model.fields,field_description:education.field_education_section____last_update
+#: model:ir.model.fields,field_description:education.field_education_shift____last_update
+#: model:ir.model.fields,field_description:education.field_education_subject____last_update
+#: model:ir.model.fields,field_description:education.field_education_subject_type____last_update
+#: model:ir.model.fields,field_description:education.field_education_task_type____last_update
+#: model:ir.model.fields,field_description:education.field_education_work_reason____last_update
+#: model:ir.model.fields,field_description:education.field_education_workday_type____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__write_uid
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__write_uid
+#: model:ir.model.fields,field_description:education.field_education_activity_type__write_uid
+#: model:ir.model.fields,field_description:education.field_education_classroom__write_uid
+#: model:ir.model.fields,field_description:education.field_education_contract_type__write_uid
+#: model:ir.model.fields,field_description:education.field_education_course__write_uid
+#: model:ir.model.fields,field_description:education.field_education_designation_level__write_uid
+#: model:ir.model.fields,field_description:education.field_education_field__write_uid
+#: model:ir.model.fields,field_description:education.field_education_group__write_uid
+#: model:ir.model.fields,field_description:education.field_education_group_session__write_uid
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__write_uid
+#: model:ir.model.fields,field_description:education.field_education_group_type__write_uid
+#: model:ir.model.fields,field_description:education.field_education_idtype__write_uid
+#: model:ir.model.fields,field_description:education.field_education_language__write_uid
+#: model:ir.model.fields,field_description:education.field_education_level__write_uid
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__write_uid
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__write_uid
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__write_uid
+#: model:ir.model.fields,field_description:education.field_education_model__write_uid
+#: model:ir.model.fields,field_description:education.field_education_plan__write_uid
+#: model:ir.model.fields,field_description:education.field_education_position__write_uid
+#: model:ir.model.fields,field_description:education.field_education_schedule__write_uid
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__write_uid
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__write_uid
+#: model:ir.model.fields,field_description:education.field_education_section__write_uid
+#: model:ir.model.fields,field_description:education.field_education_shift__write_uid
+#: model:ir.model.fields,field_description:education.field_education_subject__write_uid
+#: model:ir.model.fields,field_description:education.field_education_subject_type__write_uid
+#: model:ir.model.fields,field_description:education.field_education_task_type__write_uid
+#: model:ir.model.fields,field_description:education.field_education_work_reason__write_uid
+#: model:ir.model.fields,field_description:education.field_education_workday_type__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__write_date
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__write_date
+#: model:ir.model.fields,field_description:education.field_education_activity_type__write_date
+#: model:ir.model.fields,field_description:education.field_education_classroom__write_date
+#: model:ir.model.fields,field_description:education.field_education_contract_type__write_date
+#: model:ir.model.fields,field_description:education.field_education_course__write_date
+#: model:ir.model.fields,field_description:education.field_education_designation_level__write_date
+#: model:ir.model.fields,field_description:education.field_education_field__write_date
+#: model:ir.model.fields,field_description:education.field_education_group__write_date
+#: model:ir.model.fields,field_description:education.field_education_group_session__write_date
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__write_date
+#: model:ir.model.fields,field_description:education.field_education_group_type__write_date
+#: model:ir.model.fields,field_description:education.field_education_idtype__write_date
+#: model:ir.model.fields,field_description:education.field_education_language__write_date
+#: model:ir.model.fields,field_description:education.field_education_level__write_date
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__write_date
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__write_date
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__write_date
+#: model:ir.model.fields,field_description:education.field_education_model__write_date
+#: model:ir.model.fields,field_description:education.field_education_plan__write_date
+#: model:ir.model.fields,field_description:education.field_education_position__write_date
+#: model:ir.model.fields,field_description:education.field_education_schedule__write_date
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__write_date
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__write_date
+#: model:ir.model.fields,field_description:education.field_education_section__write_date
+#: model:ir.model.fields,field_description:education.field_education_shift__write_date
+#: model:ir.model.fields,field_description:education.field_education_subject__write_date
+#: model:ir.model.fields,field_description:education.field_education_subject_type__write_date
+#: model:ir.model.fields,field_description:education.field_education_task_type__write_date
+#: model:ir.model.fields,field_description:education.field_education_work_reason__write_date
+#: model:ir.model.fields,field_description:education.field_education_workday_type__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_level
+#: model:ir.model.fields,field_description:education.field_education_course__level_id
+#: model:ir.model.fields,field_description:education.field_education_group__level_id
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__level_id
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__level_id
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__level_id
+#: model:ir.model.fields,field_description:education.field_education_schedule__level_id
+#: model:ir.model.fields,field_description:education.field_education_task_type__level
+#: model:ir.ui.menu,name:education.schedule_level_menuitem
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+msgid "Level"
+msgstr "Nivel"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_plan__level_ids
+#: model:ir.model.fields,field_description:education.field_education_subject__level_ids
+#: model:ir.model.fields,field_description:education.field_education_task_type__level_ids
+msgid "Levels"
+msgstr "Niveles"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_subject__min_description
+#: model_terms:ir.ui.view,arch_db:education.education_subject_view_form
+msgid "Min. Description"
+msgstr "Descripción mínima"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_section__name
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+msgid "Non Official Groups"
+msgstr "Grupos no oficiales"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_schedule_view_form
+msgid "Non-Academic Task"
+msgstr "Tarea no académica"
+
+#. module: education
+#: selection:education.task_type,type:0
+msgid "Non-teaching"
+msgstr "No lectiva"
+
+#. module: education
+#: selection:education.position,type:0
+msgid "Normal"
+msgstr ""
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_position_view_search
+msgid "Normal Position"
+msgstr "Cargo normal"
+
+#. module: education
+#: selection:education.group_type,type:0
+msgid "Official"
+msgstr "Oficial"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+msgid "Official Groups"
+msgstr "Grupos oficiales"
+
+#. module: education
+#: selection:education.subject.type,type:0
+msgid "Optional"
+msgstr "Optativa"
+
+#. module: education
+#: selection:education.group_type,type:0
+#: selection:education.position,type:0
+msgid "Other"
+msgstr "Otro"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_task_type__other_activities
+msgid "Other Activities"
+msgstr "Otras actividades"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule__activity_type_id
+msgid "Other Activity"
+msgstr "Otra actividad"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_activity_type
+#: model:ir.ui.menu,name:education.schedule_activity_type_menuitem
+msgid "Other Activity Type"
+msgstr "Tipo de otras actividades"
+
+#. module: education
+#: model_terms:ir.ui.view,arch_db:education.education_position_view_search
+msgid "Other Position"
+msgstr "Otro cargo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group__parent_id
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__parent_group_id
+msgid "Parent Group"
+msgstr "Grupo padre"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__parent_group_type_id
+msgid "Parent Group Type"
+msgstr "Tipo de grupo padre"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_course__plan_id
+#: model:ir.model.fields,field_description:education.field_education_group__plan_id
+#: model:ir.model.fields,field_description:education.field_education_level__plan_id
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__plan_id
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__plan_id
+msgid "Plan"
+msgstr "Plan educativo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_position__type
+msgid "Position Type"
+msgstr "Tipo de cargo"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_position
+#: model:ir.ui.menu,name:education.faculty_position_menuitem
+msgid "Positions"
+msgstr "Cargos"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_session__recess
+msgid "Recess"
+msgstr "Recreo"
+
+#. module: education
+#: model:ir.ui.menu,name:education.education_report_menuitem
+msgid "Reports"
+msgstr "Informes"
+
+#. module: education
+#: model:res.groups,name:education.education_responsible
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_schedule
+#: model:ir.actions.act_window,name:education.action_education_schedule_from_group
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__schedule_id
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__schedule_id
+#: model:ir.ui.menu,name:education.schedule_schedule_menuitem
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_form
+msgid "Schedule"
+msgstr "Planificacion"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group__schedule_count
+msgid "Schedule Number"
+msgstr "Planificaciones"
+
+#. module: education
+#: model:ir.ui.menu,name:education.configuration_schedule_table_menuitem
+#: model:ir.ui.menu,name:education.schedule_table_menuitem
+msgid "Schedule Table"
+msgstr "Cuadro horario"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__school_working_day
+msgid "School Working Day"
+msgstr "Jornada lectiva"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_classroom__capacity
+msgid "Seating Capacity"
+msgstr "Aforo"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_section
+#: model:ir.ui.menu,name:education.education_section_menuitem
+msgid "Sections"
+msgstr "Secciones"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year_evaluation__sequence
+#: model:ir.model.fields,field_description:education.field_education_group_teacher__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: education
+#: sql_constraint:education.group.teacher:0
+msgid "Sequence must be between 1 and 10!"
+msgstr "¡La secuencia debe ser entre 1 y 10!"
+
+#. module: education
+#: sql_constraint:education.group.teacher:0
+msgid "Sequence must be unique per group!"
+msgstr "¡La secuencia debe ser única por grupo!"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_session__session_number
+#: model:ir.model.fields,field_description:education.field_education_schedule__session_number
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__session_number
+msgid "Session Number"
+msgstr "Nº sesión"
+
+#. module: education
+#: sql_constraint:education.group.session:0
+msgid "Session number unique per day of week and group!"
+msgstr "¡El número de sesión debe ser único por día de la semana y grupo!"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group__session_ids
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_form
+msgid "Sessions"
+msgstr "Sesiones"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_shift
+#: model:ir.model.fields,field_description:education.field_education_course__shift_id
+#: model:ir.model.fields,field_description:education.field_education_group__shift_id
+#: model:ir.ui.menu,name:education.schedule_shift_menuitem
+msgid "Shift"
+msgstr "Turno"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_activity_type__short_description
+#: model:ir.model.fields,field_description:education.field_education_classroom__short_description
+#: model:ir.model.fields,field_description:education.field_education_contract_type__short_description
+#: model:ir.model.fields,field_description:education.field_education_course__short_description
+#: model:ir.model.fields,field_description:education.field_education_data__short_description
+#: model:ir.model.fields,field_description:education.field_education_designation_level__short_description
+#: model:ir.model.fields,field_description:education.field_education_field__short_description
+#: model:ir.model.fields,field_description:education.field_education_group__short_description
+#: model:ir.model.fields,field_description:education.field_education_group_type__short_description
+#: model:ir.model.fields,field_description:education.field_education_idtype__short_description
+#: model:ir.model.fields,field_description:education.field_education_language__short_description
+#: model:ir.model.fields,field_description:education.field_education_level__short_description
+#: model:ir.model.fields,field_description:education.field_education_model__short_description
+#: model:ir.model.fields,field_description:education.field_education_plan__short_description
+#: model:ir.model.fields,field_description:education.field_education_position__short_description
+#: model:ir.model.fields,field_description:education.field_education_shift__short_description
+#: model:ir.model.fields,field_description:education.field_education_subject__short_description
+#: model:ir.model.fields,field_description:education.field_education_subject_type__short_description
+#: model:ir.model.fields,field_description:education.field_education_task_type__short_description
+#: model:ir.model.fields,field_description:education.field_education_work_reason__short_description
+#: model:ir.model.fields,field_description:education.field_education_workday_type__short_description
+#: model_terms:ir.ui.view,arch_db:education.education_activity_type_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_contract_type_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_designation_level_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_language_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_level_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_subject_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_work_reason_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_workday_type_view_form
+msgid "Short Description"
+msgstr "Descripción abreviada"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_academic_year__date_start
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_report__student_id
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__student_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+msgid "Student"
+msgstr "Alumno"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__student_count
+msgid "Student Count"
+msgstr "Cantidad de alumnos"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_group_student_report
+#: model:ir.ui.menu,name:education.education_group_student_report_menuitem
+msgid "Student Group List"
+msgstr "Listado de alumnos"
+
+#. module: education
+#: model:ir.model,name:education.model_education_group_student_report
+msgid "Student Groups Report"
+msgstr "Informe de alumnos por grupos"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group__student_count
+#: model:ir.model.fields,field_description:education.field_education_schedule__student_count
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__group_student_count
+#: model:ir.model.fields,field_description:education.field_education_schedule_group__parent_group_student_count
+msgid "Student Number"
+msgstr "Nº de alumnos"
+
+#. module: education
+#: code:addons/education/models/education_group.py:115
+#: code:addons/education/models/education_schedule.py:120
+#: model:ir.model.fields,field_description:education.field_education_group__student_ids
+#: model:ir.model.fields,field_description:education.field_education_schedule__student_ids
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_schedule_view_form
+#, python-format
+msgid "Students"
+msgstr "Alumnos"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_field
+#: model:ir.model.fields,field_description:education.field_education_course__field_id
+#: model:ir.model.fields,field_description:education.field_education_group__field_id
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__field_id
+#: model:ir.ui.menu,name:education.schedule_field_menuitem
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_search
+msgid "Study Field"
+msgstr "Especialidad"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_subject__field_ids
+msgid "Study Fields"
+msgstr "Especialidades"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_subject
+#: model:ir.model.fields,field_description:education.field_education_level_course_subject__subject_id
+#: model:ir.model.fields,field_description:education.field_education_level_field_subject__subject_id
+#: model:ir.ui.menu,name:education.schedule_subject_menuitem
+msgid "Subject"
+msgstr "Asignatura"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_subject_type
+#: model:ir.model.fields,field_description:education.field_education_schedule__subject_type
+#: model:ir.model.fields,field_description:education.field_education_subject__subject_type
+#: model:ir.ui.menu,name:education.schedule_subject_type_menuitem
+msgid "Subject Type"
+msgstr "Tipo de asignatura"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_course__level_subject_ids
+#: model_terms:ir.ui.view,arch_db:education.education_course_view_form
+msgid "Subjects by Level"
+msgstr "Asignaturas por nivel"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_field__level_subject_ids
+#: model_terms:ir.ui.view,arch_db:education.education_field_view_form
+msgid "Subjects by Levels"
+msgstr "Asignaturas por niveles"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_task_type
+#: model:ir.model.fields,field_description:education.field_education_schedule__task_type_id
+#: model:ir.ui.menu,name:education.schedule_task_type_menuitem
+msgid "Task Type"
+msgstr "Tipo de tarea"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule__task_type_type
+msgid "Task Type Type"
+msgstr "Tipo de tarea"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_level__task_type_ids
+#: model_terms:ir.ui.view,arch_db:education.education_level_view_form
+msgid "Task Types"
+msgstr "Tipos de tarea"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_student_report__teacher_id
+#: model:ir.model.fields,field_description:education.field_education_group_teacher_report__teacher_id
+#: model:ir.model.fields,field_description:education.field_education_schedule__teacher_id
+#: model_terms:ir.ui.view,arch_db:education.education_group_student_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_group_teacher_report_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_schedule_view_search
+msgid "Teacher"
+msgstr "Profesor"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_group_teacher_report
+#: model:ir.ui.menu,name:education.education_group_teacher_report_menuitem
+msgid "Teacher Group List"
+msgstr "Listado de profesores"
+
+#. module: education
+#: model:ir.model,name:education.model_education_group_teacher_report
+msgid "Teacher Groups Repor"
+msgstr "Informe de profesores por grupos"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group__teacher_ids
+#: model_terms:ir.ui.view,arch_db:education.education_group_view_form
+msgid "Teachers"
+msgstr "Tutores"
+
+#. module: education
+#: selection:education.task_type,type:0
+msgid "Teaching"
+msgstr "Lectiva"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule__timetable_ids
+msgid "Timetable"
+msgstr "Horario"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_task_type__tutoring
+msgid "Tutoring"
+msgstr "Refuerzo"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_type__type
+#: model:ir.model.fields,field_description:education.field_education_subject__type_id
+#: model:ir.model.fields,field_description:education.field_education_subject_type__type
+#: model:ir.model.fields,field_description:education.field_education_task_type__type
+#: model_terms:ir.ui.view,arch_db:education.education_position_view_search
+#: model_terms:ir.ui.view,arch_db:education.education_subject_type_view_form
+#: model_terms:ir.ui.view,arch_db:education.education_subject_view_search
+msgid "Type"
+msgstr "Tipo"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_workday_type
+#: model:ir.ui.menu,name:education.faculty_workday_type_menuitem
+msgid "Type of Workday"
+msgstr "Tipos de jornada"
+
+#. module: education
+#: model:res.groups,name:education.education_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.action_education_work_reason
+#: model:ir.ui.menu,name:education.faculty_work_reason_menuitem
+msgid "Work Reasons"
+msgstr "Causas de alta privados"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_session__hour_from
+#: model:ir.model.fields,field_description:education.field_education_schedule__hour_from
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__hour_from
+msgid "Work from"
+msgstr "Trabajar desde"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_group_session__hour_to
+#: model:ir.model.fields,field_description:education.field_education_schedule__hour_to
+#: model:ir.model.fields,field_description:education.field_education_schedule_timetable__hour_to
+msgid "Work to"
+msgstr "Trabajar hasta"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_level_workday_type__workday_type_id
+msgid "Workday Type"
+msgstr "Tipo de jornada"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_level__academic_year_workday_type_id
+#: model_terms:ir.ui.view,arch_db:education.education_level_view_form
+msgid "Workday Type per Academic Year"
+msgstr "Tipo de jornada por año académico"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_schedule__resource_calendar_id
+msgid "Working Hours"
+msgstr "Horas laborales"
+
+#. module: education
+#: code:addons/education/models/education_group.py:80
+#, python-format
+msgid "You cannot create recursive groups."
+msgstr "No puede crear grupos recursivos."
+
